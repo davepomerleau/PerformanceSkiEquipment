@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Pomerleau | Ski Pro & Equipment Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f1a;
+            color: #e5e7eb;
+        }
+        header {
+            background: linear-gradient(180deg, #0b0f1a 0%, #111827 100%);
+            padding: 120px 20px 100px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        p {
+            max-width: 900px;
+            margin: 0 auto 20px;
+            line-height: 1.7;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+        .subheadline {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            max-width: 750px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 16px 34px;
+            background-color: #d4af37;
+            color: #0b0f1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 40px;
+            transition: 0.3s ease;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 60px auto 0;
+        }
+        .card {
+            background-color: #111827;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        .product-card {
+            background: linear-gradient(145deg, #111827, #0b0f1a);
+            border-radius: 24px;
+            border: 1px solid #1f2937;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+        .product-content {
+            padding: 30px;
+        }
+        .product-card h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .price {
+            margin-top: 15px;
+            font-weight: 600;
+            color: #d4af37;
+        }
+        footer {
+            padding: 60px 20px;
+            background-color: #05070d;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border-radius: 14px;
+            border: 1px solid #1f2937;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            font-family: 'Inter', sans-serif;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Performance Ski Equipment.<br>Elite Insight. Tailored Precision.</h1>
+    <p class="subheadline">Independent Ski Professional & Equipment Specialist delivering curated ski selections and performance-driven setups for serious skiers.</p>
+    <a href="#contact" class="btn">Schedule a Private Gear Consultation</a>
+</header>
+
+<section>
+    <h2>About David</h2>
+    <p>David Pomerleau is an Ontario-based ski professional known for precision equipment selection and athlete-focused consulting. With extensive on-snow experience and deep technical knowledge of ski construction, flex patterns, and terrain application, David provides curated recommendations that elevate confidence and control.</p>
+</section>
+
+<section>
+    <h2>Consulting Services</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Precision Ski Matching</h3>
+            <p>Advanced ski pairing based on skier biomechanics, terrain profile, snow conditions, and performance objectives.</p>
+        </div>
+        <div class="card">
+            <h3>Binding & Performance Setup</h3>
+            <p>Professional insight into binding selection, mounting position considerations, and performance optimization.</p>
+        </div>
+        <div class="card">
+            <h3>Premium Gear Sourcing</h3>
+            <p>Access to high-performance ski brands and boutique manufacturers selected for quality and innovation.</p>
+        </div>
+        <div class="card">
+            <h3>Seasonal Equipment Strategy</h3>
+            <p>Multi-ski quiver planning for varying terrain, race prep, or all-mountain versatility.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Featured Equipment Selections</h2>
+    <div class="card-container">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1546484959-f9a0b8f5d4b6?auto=format&fit=crop&w=1200&q=80" alt="All Mountain Skis in Snow" class="product-image">
+            <div class="product-content">
+                <h3>High-Performance All-Mountain Ski</h3>
+                <p>Versatile construction designed for stability at speed, confident edge hold, and responsive energy transfer.</p>
+                <div class="price">Starting at $899 CAD</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1516569422535-cf5a1c1a0c5f?auto=format&fit=crop&w=1200&q=80" alt="Carving Skis on Groomed Run" class="product-image">
+            <div class="product-content">
+                <h3>Advanced Frontside Carving Ski</h3>
+                <p>Precision-engineered for powerful edge engagement and controlled carving on groomed terrain.</p>
+                <div class="price">Starting at $949 CAD</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1605540426513-3f8f5b7d3a2d?auto=format&fit=crop&w=1200&q=80" alt="Alpine Ski Bindings Close Up" class="product-image">
+            <div class="product-content">
+                <h3>Performance Alpine Binding</h3>
+                <p>Reliable retention and elastic travel designed for aggressive skiing and enhanced safety.</p>
+                <div class="price">Starting at $249 CAD</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1607533331049-5c3070ec92f1?auto=format&fit=crop&w=1200&q=80" alt="Multiple Skis Ready for Use" class="product-image">
+            <div class="product-content">
+                <h3>Elite Ski Quiver Build</h3>
+                <p>A fully customized multi-ski setup designed around your terrain focus — carving, all-mountain, powder, or race — complete with optimized bindings and performance configuration.</p>
+                <div class="price">By Consultation</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>The Difference</h2>
+    <p>This is not retail floor advice. Every recommendation is informed by on-snow testing, technical understanding of ski dynamics, and a commitment to matching equipment precisely to the skier — not the trend.</p>
+</section>
+
+<section id="contact">
+    <h2>Private Inquiries</h2>
+    <p>For curated ski recommendations or premium equipment sourcing, submit your inquiry below.</p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Tell me about your skiing and goals."></textarea>
+        <button type="submit" class="btn">Submit Inquiry</button>
+    </form>
+</section>
+
+<footer>
+    © 2024 David Pomerleau | Independent Ski Professional & Equipment Specialist
+</footer>
+
+</body>
+</html>
