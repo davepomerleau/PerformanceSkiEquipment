@@ -6,171 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body {
-            margin: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #0f172a;
-            color: white;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(15,23,42,1)),
-                        url("https://images.unsplash.com/photo-1601019891178-c43d2db8f3b8?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
-            height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-top: 10px;
-        }
-
-        .btn {
-            margin-top: 25px;
-            padding: 14px 30px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #e2e8f0;
-        }
-
-        section {
-            padding: 80px 10%;
-        }
-
-        .dark-section {
-            background-color: #1e293b;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .section-text {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-            color: #cbd5e1;
-            font-size: 1.1rem;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .product-card {
-            background: #1e293b;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            filter: brightness(0.9);
-        }
-
-        .product-card h3 {
-            padding: 20px 20px 0;
-        }
-
-        .product-card p {
-            padding: 0 20px 20px;
-            color: #cbd5e1;
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .value-card {
-            background: #0f172a;
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .consultation-form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .consultation-form input,
-        .consultation-form textarea {
-            width: 100%;
-            padding: 14px;
-            margin-bottom: 18px;
-            border-radius: 12px;
-            border: 1px solid #1f2937;
-            background-color: #0f172a;
-            color: #e5e7eb;
-            font-size: 1rem;
-        }
-
-        .consultation-form button {
-            padding: 14px 30px;
-            background-color: #d4af37;
-            color: #0b0f1a;
-            border: none;
-            border-radius: 30px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .consultation-form button:hover {
-            opacity: 0.85;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background-color: #020617;
-            font-size: 0.9rem;
-            color: #94a3b8;
-        }
+        body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #0f172a; color: white; line-height: 1.6; }
+        header { background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(15,23,42,1)), url('https://cdn.pixabay.com/photo/2017/03/27/14/56/alps-2179048_1280.jpg') center/cover no-repeat; height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        header h1 { font-size: 3rem; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; max-width: 700px; margin-top: 10px; }
+        .btn { margin-top: 25px; padding: 14px 30px; background: white; color: black; text-decoration: none; border-radius: 30px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #e2e8f0; }
+        section { padding: 80px 10%; }
+        .dark-section { background-color: #1e293b; }
+        .section-title { font-size: 2rem; margin-bottom: 30px; text-align: center; }
+        .section-text { max-width: 900px; margin: 0 auto; text-align: center; color: #cbd5e1; font-size: 1.1rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-top: 40px; }
+        .product-card { background: #1e293b; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
+        .product-card:hover { transform: translateY(-10px); }
+        .product-card img { width: 100%; height: 250px; object-fit: cover; filter: brightness(0.9); }
+        .product-card h3 { padding: 20px 20px 0; }
+        .product-card p { padding: 0 20px 20px; color: #cbd5e1; }
+        .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 40px; }
+        .value-card { background: #0f172a; padding: 30px; border-radius: 20px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .consultation-form { max-width: 600px; margin: 0 auto; text-align: left; }
+        .consultation-form input, .consultation-form textarea { width: 100%; padding: 14px; margin-bottom: 18px; border-radius: 12px; border: 1px solid #1f2937; background-color: #0f172a; color: #e5e7eb; font-size: 1rem; }
+        .consultation-form button { padding: 14px 30px; background-color: #d4af37; color: #0b0f1a; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .consultation-form button:hover { opacity: 0.85; }
+        footer { text-align: center; padding: 40px; background-color: #020617; font-size: 0.9rem; color: #94a3b8; }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Pomerleau Performance Ski Packages</h1>
+    <h1>David Pomerleau</h1>
     <p>Premium Ski Equipment & Custom Performance Builds — Precision. Performance. Confidence.</p>
     <a href="#products" class="btn">Explore Collection</a>
 </header>
@@ -217,25 +82,25 @@
     <div class="product-grid">
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1613145996221-dad502d9b070?auto=format&fit=crop&w=1200&q=80" alt="Custom Ski Package">
+            <img src="https://cdn.pixabay.com/photo/2019/12/08/13/46/skis-4671636_1280.jpg" alt="Custom Ski Package">
             <h3>Custom Ski Package</h3>
             <p>Complete ski setup including high-performance skis, bindings, and professional configuration tailored to your skiing style.</p>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1613145996060-7f23d6f06f2b?auto=format&fit=crop&w=1200&q=80" alt="Elite Ski Quiver Build">
+            <img src="https://cdn.pixabay.com/photo/2021/01/03/12/22/skiing-5885419_1280.jpg" alt="Elite Ski Quiver Build">
             <h3>Elite Ski Quiver Build</h3>
             <p>A premium multi-ski setup designed for versatility across groomers, powder, and advanced terrain conditions.</p>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1607533331049-5c3070ec92f1?auto=format&fit=crop&w=1200&q=80" alt="Performance Ski Boots">
+            <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/ski-boots-2062148_1280.jpg" alt="Performance Ski Boots">
             <h3>Performance Ski Boots</h3>
             <p>Precision-fit ski boots engineered for comfort, control, and optimal power transfer.</p>
         </div>
 
         <div class="product-card">
-            <img src="https://images.unsplash.com/photo-1613145996350-2f5bc5e5cce5?auto=format&fit=crop&w=1200&q=80" alt="High Performance Ski Bindings">
+            <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/ski-boots-2062148_1280.jpg" alt="High Performance Bindings">
             <h3>High Performance Bindings</h3>
             <p>Advanced alpine bindings delivering security, reliability, and peak downhill performance.</p>
         </div>
