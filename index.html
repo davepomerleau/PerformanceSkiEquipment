@@ -11,17 +11,19 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #0f172a;
             color: white;
+            line-height: 1.6;
         }
 
         header {
             background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(15,23,42,1)),
-                        url("images/hero-ski.jpg") center/cover no-repeat;
+                        url("https://images.unsplash.com/photo-1601019891178-c43d2db8f3b8?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
             height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 0 20px;
         }
 
         header h1 {
@@ -31,33 +33,52 @@
 
         header p {
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 700px;
+            margin-top: 10px;
         }
 
         .btn {
-            margin-top: 20px;
-            padding: 12px 28px;
+            margin-top: 25px;
+            padding: 14px 30px;
             background: white;
             color: black;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #e2e8f0;
         }
 
         section {
             padding: 80px 10%;
         }
 
+        .dark-section {
+            background-color: #1e293b;
+        }
+
         .section-title {
             font-size: 2rem;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-align: center;
+        }
+
+        .section-text {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            color: #cbd5e1;
+            font-size: 1.1rem;
         }
 
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
+            margin-top: 40px;
         }
 
         .product-card {
@@ -76,6 +97,7 @@
             width: 100%;
             height: 250px;
             object-fit: cover;
+            filter: brightness(0.9);
         }
 
         .product-card h3 {
@@ -85,6 +107,54 @@
         .product-card p {
             padding: 0 20px 20px;
             color: #cbd5e1;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            background: #0f172a;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .consultation-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .consultation-form input,
+        .consultation-form textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid #1f2937;
+            background-color: #0f172a;
+            color: #e5e7eb;
+            font-size: 1rem;
+        }
+
+        .consultation-form button {
+            padding: 14px 30px;
+            background-color: #d4af37;
+            color: #0b0f1a;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .consultation-form button:hover {
+            opacity: 0.85;
         }
 
         footer {
@@ -101,40 +171,101 @@
 
 <header>
     <h1>David Pomerleau</h1>
-    <p>Premium Ski Equipment & Custom Performance Builds</p>
+    <p>Premium Ski Equipment & Custom Performance Builds — Precision. Performance. Confidence.</p>
     <a href="#products" class="btn">Explore Collection</a>
 </header>
 
+<section>
+    <div class="section-title">About Me</div>
+    <div class="section-text">
+        My approach to ski equipment is built on experience, precision, and performance. 
+        As a professional ski instructor working across multiple Ontario ski destinations, 
+        I understand how the right setup can transform confidence, control, and progression on snow.
+        <br><br>
+        I don’t recommend equipment based on trends or marketing — I recommend what performs. 
+        Every ski, boot, and binding setup I build is tailored to the individual skier: 
+        their ability level, terrain preferences, and performance goals.
+        <br><br>
+        For me, this isn’t retail — it’s performance engineering for the mountain.
+    </div>
+</section>
+
+<section class="dark-section">
+    <div class="section-title">Why Choose Us</div>
+    <div class="values-grid">
+        <div class="value-card">
+            <h3>Experience-Driven</h3>
+            <p>Professional ski instruction background ensures equipment recommendations are based on real-world mountain performance.</p>
+        </div>
+        <div class="value-card">
+            <h3>Precision Builds</h3>
+            <p>Every package is thoughtfully configured for terrain, skier ability, and long-term progression.</p>
+        </div>
+        <div class="value-card">
+            <h3>Premium Focus</h3>
+            <p>We specialize in high-performance alpine equipment designed for serious skiers who value quality and craftsmanship.</p>
+        </div>
+        <div class="value-card">
+            <h3>Personal Consultation</h3>
+            <p>No generic setups. Every build begins with understanding your goals and skiing style.</p>
+        </div>
+    </div>
+</section>
+
 <section id="products">
     <div class="section-title">Product Showcase</div>
-
     <div class="product-grid">
 
         <div class="product-card">
-            <img src="images/ski-package.jpg" alt="Custom Ski Package">
+            <img src="https://images.unsplash.com/photo-1613145996221-dad502d9b070?auto=format&fit=crop&w=1200&q=80" alt="Custom Ski Package">
             <h3>Custom Ski Package</h3>
             <p>Complete ski setup including high-performance skis, bindings, and professional configuration tailored to your skiing style.</p>
         </div>
 
         <div class="product-card">
-            <img src="images/ski-quiver.jpg" alt="Elite Ski Quiver Build">
+            <img src="https://images.unsplash.com/photo-1613145996060-7f23d6f06f2b?auto=format&fit=crop&w=1200&q=80" alt="Elite Ski Quiver Build">
             <h3>Elite Ski Quiver Build</h3>
             <p>A premium multi-ski setup designed for versatility across groomers, powder, and advanced terrain conditions.</p>
         </div>
 
         <div class="product-card">
-            <img src="images/ski-boots.jpg" alt="Performance Ski Boots">
+            <img src="https://images.unsplash.com/photo-1607533331049-5c3070ec92f1?auto=format&fit=crop&w=1200&q=80" alt="Performance Ski Boots">
             <h3>Performance Ski Boots</h3>
             <p>Precision-fit ski boots engineered for comfort, control, and optimal power transfer.</p>
         </div>
 
         <div class="product-card">
-            <img src="images/ski-bindings.jpg" alt="High Performance Ski Bindings">
+            <img src="https://images.unsplash.com/photo-1613145996350-2f5bc5e5cce5?auto=format&fit=crop&w=1200&q=80" alt="High Performance Ski Bindings">
             <h3>High Performance Bindings</h3>
             <p>Advanced alpine bindings delivering security, reliability, and peak downhill performance.</p>
         </div>
 
     </div>
+</section>
+
+<section>
+    <div class="section-title">Professional Background</div>
+    <div class="section-text">
+        As an independent private ski instructor working across multiple Ontario ski destinations, 
+        my equipment insight comes directly from daily mountain experience. 
+        I understand the demands of varied snow conditions, skill progression, and performance expectations.
+        <br><br>
+        This is not retail-first — this is performance-first.
+    </div>
+</section>
+
+<section class="dark-section">
+    <div class="section-title">Book a Consultation</div>
+    <div class="section-text">
+        Submit your information below to schedule a private consultation. I will personally provide tailored recommendations for your skiing goals and equipment needs.
+    </div>
+    <form class="consultation-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="text" name="phone" placeholder="Phone Number (optional)">
+        <textarea name="message" rows="5" placeholder="Tell me about your skiing style, goals, and terrain preferences"></textarea>
+        <button type="submit">Submit Consultation Request</button>
+    </form>
 </section>
 
 <footer>
